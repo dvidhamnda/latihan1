@@ -9,26 +9,23 @@
         font-family: 'Segoe UI', sans-serif;
         background-color: rgb(249, 248, 248);
         margin: 0;
-        padding: 40px 0;
-        line-height: 1.6;
-        color: #fbf6f6;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
     }
     .container {
-        background-color: rgb(247, 249, 249);
-        width: 745px;
-        margin: 0 auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px #b7b4b4;
-        padding: 40px 60px;
+        background-color: rgb(68, 152, 152);
+        width: 88%;
+        max-width: 700px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px #fbf6f6;
     }
     .garis {
-        width: 860px;
         height: 5px;
         background-color: rgb(35, 152, 35);
-        margin: 0 auto;
-        border-radius: 2px;
-        border-top-left-radius:  5px;
-        border-top-right-radius: 5px;
+        margin-bottom: 20px;
+        border-top-left-radius:  15px;
+        border-top-right-radius: 15px;
     }
     h1 {
         text-align: center;
@@ -38,39 +35,61 @@
     .subtitle {
         text-align: center;
         font-size: 13px;
-        color: rgb(118, 132, 132);
+        color: rgb(61, 142, 142);
     }
     h2 {
         color: rgb(20, 146, 41);
         font-size:20px;
         margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 25px;
     }
     h3 {
         color: rgb(37, 37, 37);
         font-size: 15px;
         margin-top: 0px;
-        
+        margin-bottom: 20px ;
+        padding-left: 25px;
     }
     p {
         text-align: justify;
         line-height: 1.5;
         font-size: 15px;
         color: rgb(3, 40, 34);
+        padding-left:25px;
+        padding-right:25px;
     }
     footer {
         text-align: left;
         font-size: 10px;
         color: rgb(88, 87, 90);
         margin-top: 10px;
+        margin-bottom:10px;
         padding-top: 10px;
-        border-top: 1px solid grey;
+        margin-left: 40px;
+        
+    }
+    .image-container{
+        margin-top: 30px; 
+        text-align: justify;
+        color: grey;
+        padding-bottom: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0;
+        border-bottom: 1px solid rgb(122, 119, 119);
+        padding-right: 5px;
+        padding-left: 5px ; 
+        padding-bottom: 15px;
         
     }
     
-    img{
+    .image-container img{
         width: 100%;
+        height: auto;
         display: block;
-        margin: 20px auto;
+        margin: auto;
+        border: 1px solid rgb(6, 6, 6);
         border-radius: 5px;
     }
     
@@ -79,9 +98,8 @@
 </style>
 </head>
 <body>
-    <div class="garis"></div>
-
-    <div class="container"> 
+    <div class="container">
+        <div class="garis"></div>
         <h1>Hutan Hujan Tropis dan Perannya</h1>
         <div class="subtitle">Sumber keanekaragaman dan penopang
             iklim global-Latihan HTML & CSS</div>
@@ -126,7 +144,8 @@
         <p>Hutan hujan adalah aset alam kritis: pelestariannya penting
             untuk kelangsungan hidup banyak spisies termasuk manusia.</p>
 
-            <img src="gambarhutan.jpg" alt="hujan tropis">
+        <figure class="image-container">
+            <img src="gambar1.jpeg"></figure> 
         <footer>Gunakan file ini sebagai materi latihan tambahkan links, ubah warna, dan edit struktur sesuai tugas kelas.</footer>        
     </div>
 </body>
